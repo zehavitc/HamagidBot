@@ -20,6 +20,13 @@
 		<Response>מעדיף לא לחשוף את זהותי, נסתפק בהמגיד</Response>
 	</Pattern>
 	<Pattern>
+		<Message>.*איך קוראים לי*</Message>
+		<Message>.*מה שמי.*</Message>
+		<Message>.*מה השם שלי.*</Message>
+		<Response>מצטער, אבל אני לא זוכר</Response>
+		<Response>אני לא טוב בשמות, סורי</Response>
+	</Pattern>
+	<Pattern>
 		<Message>.*המגיד.*</Message>
 		<Response>אני לא מרגיש מספיק בנוח לשתף בנוגע למקורות השם שלי, אולי כשנתיידד יותר</Response>
 		<Response>זה לא כזה קשה להבין למה, תחשוב על משמעות המילה מגיד</Response>

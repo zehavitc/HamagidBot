@@ -20,10 +20,7 @@ class avoiding_msg_wiki(answer_template):
         """
         msg = params[0]
         topic = self.get_topic_wiki(msg)
-        if self.is_random:
-            answer = random.choice(self.li)
-        else:
-            answer = self.li[0]
+        answer = random.choice(self.li)
         if len(params) > 1:
             func = params[1]
             topic = func(topic)
