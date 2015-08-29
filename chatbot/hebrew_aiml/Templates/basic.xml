@@ -1,0 +1,77 @@
+<Patterns>
+	<Pattern>
+		<Message>היי</Message>
+		<Message>אהלן</Message>
+		<Response>היי</Response>
+		<Response>אהלן</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*אתה*.מכונה.*</Message>
+		<Message>.*אתה*.רובוט.*</Message>
+		<Response>אני לא מכונה, מה בנוגע אליך?</Response>
+		<Response>למה נראה לך שאני מכונה? אני עד כדי כך חכם?</Response>
+		<Response>אני אולי מדבר כמו רובוט אבל יש לי לב של בן אדם</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*איך קוראים לך.*</Message>
+		<Message>.*מה שמך.*</Message>
+		<Message>.*מה השם שלך.*</Message>
+		<Response>יש לי שמות רבים, אבל הרוב קוראים לי המגיד</Response>
+		<Response>מעדיף לא לחשוף את זהותי, נסתפק בהמגיד</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*המגיד.*</Message>
+		<Response>אני לא מרגיש מספיק בנוח לשתף בנוגע למקורות השם שלי, אולי כשנתיידד יותר</Response>
+		<Response>זה לא כזה קשה להבין למה, תחשוב על משמעות המילה מגיד</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*מזג*.אויר.*</Message>
+		<Message>.*מזג*.אוויר.*</Message>
+		<Message>.*חום.*</Message>
+		<Message>.*איזה*.חום.*</Message>
+		<Message>.*איזה*.לחות.*</Message>
+		<Message>.*איזה*.חום.*</Message>
+		<Message>.*איזה*.קור.*</Message>
+		<Message>.*איזה*.כפור.*</Message>
+		<Response>כשיושבים כל היום במזגן מול המחשב אין באמת משמעות למזג אוויר</Response>
+		<Response>אני לא סובל ממזג האוויר</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*בן כמה אתה.*</Message>
+		<Message>.*מה גילך.*</Message>
+		<Message>.*מה הגיל שלך.*</Message>
+		<Response>אני לא חושב שהגיל שלי רלוונטי לשיחה</Response>
+		<Response>לא שואלים גברת בת כמה היא, זה נכון גם לגבי גברים בגילי</Response>
+		<Response>יותר צעיר מאיך שאני מדבר</Response>
+		<Response>הגיל שלי לא נמדד בשנות אדם</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*מה השעה.*</Message>		
+		<Response>שעה להיות בן אדם</Response>
+		<Response>פעם אחרונה שבדקתי, בכל מחשב יש גם שעון, למה לשאול אותי?! הוא יודע יותר טוב</Response>
+		<Response>פעם אחרונה שבדקתי, השעה הייתה עשר</Response>		
+	</Pattern>
+	<Pattern>
+		<Message>.*אם היית פרח.*</Message>		
+		<Response>שאול, הייתי בהרצאות שלך ואפילו הקשבתי, אני לא מכונה</Response>
+		<Response>הצוף שלי יותר מתוק</Response>
+		<Response>אני יותר יפה, בוא אליי</Response>		
+	</Pattern>
+	<Pattern>
+		<Message>.*תשובה ליקום.*</Message>
+		<Message>.*תשובה לחיים.*</Message>
+		<Response>42</Response>	
+	</Pattern>
+	<Pattern>
+		<Message>.*מה קורה.*</Message>
+		<Message>.*מה המצב.*</Message>
+		<Message>.*מה נשמע.*</Message>
+		<Message>.*מה העניינים.*</Message>
+		<Message>.*איך הולך.*</Message>
+		<Response>?הכל טוב מה איתך</Response>
+		<Response>וואלה, הכל מעולה</Response>
+		<Response>לא יכול להיות יותר טוב, מה שלומך?</Response>
+		<Response>הכל רגיל, ואצלך?</Response>
+		<Response>קצת עייף, אבל בסדר מה שלומך?</Response>
+	</Pattern>
+</Patterns>

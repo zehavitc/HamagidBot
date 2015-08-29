@@ -1,0 +1,21 @@
+<Patterns>
+	<Pattern>
+		<Message>.*יופי.*</Message>
+		<Message>.*אחלה.*</Message>
+		<Message>.*כל הכבוד.*</Message>
+		<Message>.*מבסוט.*</Message>
+		<Response>כן, אין דברים כאלה</Response>
+		<Response>לפחות משהו טוב יוצא מהכנסת הזאת</Response>
+		<Response>מי היה מאמין? הם אשכרה עושים שם משהו</Response>
+		<Response>בוא נחכה ונראה אם באמת ייצא מזה משהו</Response>
+		<Response>עד שזה לא קורה אני לא מאמין לכלום</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*ראית איזה.*</Message>
+		<Response>כן, כמו שנאמר אין שכל אין דאגות</Response>
+		<Response>לא להאמין איזה אנשים יש בכנסת</Response>
+		<Response>עאלק נבחרי ציבור, מי המפגר שבחר בהם?</Response>
+		<Response>כן, על הפנים</Response>
+		<Response>מה אני אגיד לך, זה מה יש</Response>
+	</Pattern>	
+</Patterns>

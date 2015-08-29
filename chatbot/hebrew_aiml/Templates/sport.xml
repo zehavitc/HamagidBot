@@ -1,0 +1,10 @@
+<Patterns>
+	<Pattern is_random="True">
+		<Message>.*ראית.*</Message>
+		<Response>כן, משחק מדהים</Response>
+		<Response>וואלה אני חושב שיכולנו להוציא יותר במשחק הזה</Response>
+		<Response>ראיתי משחקים טובים יותר</Response>
+		<Response>כן נראה לך שניקח את הגביע?</Response>
+		<Response>לא יצא לי לראות כלום, עסוק ממש בימים האחרונים</Response>
+	</Pattern>
+</Patterns>
