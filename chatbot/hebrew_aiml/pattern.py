@@ -17,18 +17,17 @@ class pattern(object):
         res = []
         words_api = words_db_api.words_db_api()
         for template in templates:
-            print(template.split(u'*'))
             sub_templates = [w.strip() for w in template.split(u'*')]
             for sub_template in sub_templates:
-                print(sub_template)
                 for i in list(reversed(range(1, 3))):
                     grams = ngrams(sub_template, i)
                     for ngram in grams:
                         # print(ngram)
                         trans = words_api.get_translation(ngram)
                         for translation in trans:
-                            if len(translation.split()) <= 2 and translation != "":
-                                res += sub_template.replace(ngram, translation)
+                            # if len(translation.split()) <= 2 and translation != "":
+                            if translation != "":
+                                res += [sub_template.replace(ngram, translation)]
         self.templates += res
 
 

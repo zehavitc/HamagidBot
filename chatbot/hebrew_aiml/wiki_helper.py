@@ -69,9 +69,9 @@ def get_info_box_data(word):
                 if 'img' in content: continue
                 result += " " + (str)(content)
         if 'img' in result: continue
-        print(row_title)
-        print(result)
-        print("-------------------")
+        # print(row_title)
+        # print(result)
+        # print("-------------------")
 
 
 def get_title(element):

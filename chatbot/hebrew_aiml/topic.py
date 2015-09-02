@@ -30,5 +30,5 @@ class topic(object):
         patterns = parse_patterns_xml(path)
         for pattern_xml in patterns:
             self.message_handlers.append(
-                message_handler(self, pattern(pattern_xml[0], False)
+                message_handler(self, pattern(pattern_xml[0],True)
                                 , answer_template(pattern_xml[1])))

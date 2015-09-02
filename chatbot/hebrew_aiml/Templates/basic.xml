@@ -5,19 +5,36 @@
 		<Response>היי</Response>
 		<Response>אהלן</Response>
 	</Pattern>
-	<Message>הכל טוב</Message>
+	<Pattern>
+		<Message>הכל טוב</Message>
 		<Message>הכל מעולה</Message>
 		<Message>הכל אחלה</Message>
 		<Message>הכל בסדר</Message>
-		<Message>אצלי טוב</Message>
-		<Message>אצלי אחלה</Message>
-		<Message>אצלי סבבה</Message>
+		<Message>.*אצלי*.טוב.*</Message>
+		<Message>.*אצלי*.בסדר.*</Message>
+		<Message>.*אצלי*.אחלה.*</Message>
+		<Message>.*אצלי*.מעולה.*</Message>		
+		<Message>.*אצלי*.פאנן.*</Message>
 		<Message>סבבה</Message>
 		<Message>מעולה</Message>
 		<Message>אחלה</Message>
 		<Message>פאנן</Message>
 		<Response>שמע לשמוע</Response>
 		<Response>מעולה</Response>
+	</Pattern>
+	<Pattern>
+		<Message>מה חדש?</Message>
+		<Message>מה חדש</Message>
+		<Message>יש חדש</Message>
+		<Message>יש חדש?</Message>
+		<Message>איך הולך?</Message>
+		<Message>איך הולך</Message>
+		<Response>הכל רגיל</Response>
+		<Response>הכל שגרתי</Response>
+	</Pattern>
+	<Pattern>
+		<Message>יופי</Message>
+		<Response>כן...</Response>
 	</Pattern>
 	<Pattern>
 		<Message>.*אתה*.מכונה.*</Message>

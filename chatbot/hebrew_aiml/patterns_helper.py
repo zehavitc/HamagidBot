@@ -20,6 +20,6 @@ def clean_input(input):
     characters_to_remove = [u',', u'.', u'?', u':', u';']
     return ''.join(c for c in input if c not in characters_to_remove)
 
-n = ngrams_old(u"ביבי הזה",1)
-n = ngrams(u"ביבי הזה",1)
-print(n)
+# n = ngrams_old(u"ביבי הזה",1)
+# n = ngrams(u"ביבי הזה",1)
+# print(n)
