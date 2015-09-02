@@ -4,14 +4,12 @@ argcomplete==0.8.9
 astropy==1.0.3
 Babel==1.3
 backports.ssl-match-hostname==3.4.0.2
-Cython==0.22.1
 bcolz==0.9.0
 BeautifulHue==0.1.2
 BeautifulSoup==3.2.1
 beautifulsoup4==4.4.0
 binstar==0.11.0
 bitarray==0.8.1
-blaze==0.8.0
 blz==0.6.2
 bokeh==0.9.0
 boto==2.38.0
