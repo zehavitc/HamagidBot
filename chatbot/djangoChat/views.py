@@ -11,6 +11,7 @@ from django.contrib.auth.models import User
 import datetime
 from django.utils.timezone import now as utcnow
 from .bot_user import bot
+import traceback
 
 
 def index(request):
@@ -91,6 +92,8 @@ def chat_api(request):
             mbot = Message(user=botUser.name, message=bot_response, gravatar=gravatar)
             mbot.save()
         except Exception as e:
+            traceback.print_last()
+            print("--------------------------")
             print(e)
         res = {'id': m.id, 'msg': m.message, 'user': m.user, 'time': m.time.strftime('%I:%M:%S %p').lstrip('0'),
                'gravatar': m.gravatar}

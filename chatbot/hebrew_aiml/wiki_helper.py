@@ -11,19 +11,20 @@ def get_category(word):
     res = wikipedia.search(word, 10, True)
     if len(res[0]) != 0:
         title = res[0][0]
-        if is_category(title) is None:
+        if is_category(title):
             return random.choice(res[0])
         return get_catageories_helper(title)
     else:
         if res[1] is not None:
             return get_catageories_helper(res[1][0])
 
+
 def is_category(title):
     try:
-        page = wikipedia.WikipediaPage(title)
-        return page
+        wikipedia.WikipediaPage(title)
+        return False
     except:
-        return None
+        return True
 
 def get_catageories_helper(title):
     try:

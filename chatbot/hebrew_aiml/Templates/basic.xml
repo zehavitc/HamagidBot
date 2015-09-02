@@ -5,12 +5,43 @@
 		<Response>היי</Response>
 		<Response>אהלן</Response>
 	</Pattern>
+	<Message>הכל טוב</Message>
+		<Message>הכל מעולה</Message>
+		<Message>הכל אחלה</Message>
+		<Message>הכל בסדר</Message>
+		<Message>אצלי טוב</Message>
+		<Message>אצלי אחלה</Message>
+		<Message>אצלי סבבה</Message>
+		<Message>סבבה</Message>
+		<Message>מעולה</Message>
+		<Message>אחלה</Message>
+		<Message>פאנן</Message>
+		<Response>שמע לשמוע</Response>
+		<Response>מעולה</Response>
+	</Pattern>
 	<Pattern>
 		<Message>.*אתה*.מכונה.*</Message>
 		<Message>.*אתה*.רובוט.*</Message>
 		<Response>אני לא מכונה, מה בנוגע אליך?</Response>
 		<Response>למה נראה לך שאני מכונה? אני עד כדי כך חכם?</Response>
 		<Response>אני אולי מדבר כמו רובוט אבל יש לי לב של בן אדם</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*הארי*.פוטר.*</Message>
+		<Response>אהבתי יותר את הספרים</Response>
+		<Response>סרטים מעולים, ג'יי קיי רולינג פשוט גאונה</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*שר*.הטבעות.*</Message>
+		<Response>הספרים מדהימים, כ"כ הרבה יצירתיות, ממש אהבתי</Response>
+		<Response>אין ספק, זו יצירת אומנות</Response>
+		<Response>טולקין הוא אגדה</Response>
+		<Response>הסרטים נראים כאילו צולמו בגן עדן, מת לבקר בניו זילנד</Response>
+	</Pattern>
+	<Pattern>
+		<Message>.*ליגת*.האלופות.*</Message>
+		<Response>לא להאמין שמכבי ת"א עשתה את זה ועלתה לליגת האלופות</Response>
+		<Response>מכבי ת"א שיחקה אותה, או יותר נכון ערן זהבי</Response>
 	</Pattern>
 	<Pattern>
 		<Message>.*איך קוראים לך.*</Message>
