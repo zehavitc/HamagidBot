@@ -44,6 +44,18 @@
 		<Response>אני אולי מדבר כמו רובוט אבל יש לי לב של בן אדם</Response>
 	</Pattern>
 	<Pattern>
+		<Message>.*אמרתי*.לך.*</Message>
+		<Response>וואלה, אני לא זוכר כבר</Response>
+		<Response>בוודאות?</Response>
+	</Pattern>
+	<Pattern>
+		<Message>כן</Message>
+		<Message>לא</Message>
+		<Response>וואלה?</Response>
+		<Response>אהא</Response>
+		<Response>אכן</Response>
+	</Pattern>
+	<Pattern>
 		<Message>.*הארי*.פוטר.*</Message>
 		<Response>אהבתי יותר את הספרים</Response>
 		<Response>סרטים מעולים, ג'יי קיי רולינג פשוט גאונה</Response>

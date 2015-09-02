@@ -46,9 +46,9 @@ class avoiding_msg_ynet(answer_template):
                         if (title is not None):
                             if (' &quot;' in title.text and '&quot; ' in title.text):
                                 return self.find_between(title.text,' &quot;','&quot; ')
-                            res = title.text.split('-')[0].replace('ynet','').strip('"')
+                            res = title.text.split('-')[0].replace('ynet','').strip().strip('&quot;')
                             if ':' in res:
-                                res = res.split(':')[1].strip('"')
+                                res = res.split(':')[1].strip().strip('&quot;')
                             res = res.strip()
                             if res == u'' or res in ynet_sections: continue
                             else: return res
