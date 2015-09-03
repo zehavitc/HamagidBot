@@ -8,6 +8,7 @@
 		<Response>מקווה שנדבר שוב בקרוב, להתראות</Response>
 	</Pattern>
 	<Pattern>
+		<Message>vhh</Message>
 		<Message>היי</Message>
 		<Message>אהלן</Message>
 		<Response>היי</Response>
@@ -141,6 +142,7 @@
 		<Message>.*מה קורה.*</Message>
 		<Message>.*מה המצב.*</Message>
 		<Message>.*מה נשמע.*</Message>
+		<Message>.*מה שלומך.*</Message>
 		<Message>.*מה העניינים.*</Message>
 		<Message>.*איך הולך.*</Message>
 		<Response>?הכל טוב מה איתך</Response>
@@ -150,3 +152,4 @@
 		<Response>קצת עייף, אבל בסדר מה שלומך?</Response>
 	</Pattern>
 </Patterns>
+

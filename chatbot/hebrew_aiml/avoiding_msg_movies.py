@@ -41,8 +41,8 @@ class avoiding_msg_movies(answer_template):
                         soup = BeautifulSoup(page)
                         title = soup.find("title")
                         if (title is not None):
-                            res = title.text.split('-')[0]
-                            re.sub(paranthesis_pattern, "", res)
+                            res = title.text.split(u'-')[0].strip().split(u"\u2013")[0].strip()
+                            res = re.sub(paranthesis_pattern, "", res).strip()
                             wikipedia.set_lang('He')
                             title = wikipedia.search(res)
                             if (len(title) == 0):
