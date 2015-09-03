@@ -50,34 +50,40 @@ class avoiding_msg_wiki(answer_template):
         msg_ngrams = bigrams + unigrams
         # msg_ngrams += msg.split()
         lens = []
+        article_lens = {}
         categories = {}
         wikipedia.set_lang('He')
         gram_to_values = {}
         for gram in msg_ngrams:
-            value = wikipedia.search(gram, 5, True)
+            value = wikipedia.search(gram, 1, True)
             if len(value[0]) == 0:
                 lens.append(0)
             else:
                 try:
+                    if value[0][0] != gram: continue
                     page_len = len(wikipedia.page(value[0][0]).content)
-                    lens.append(page_len)
+                    article_lens[gram] = page_len
                 except:
-                    #The gram is wiki category
+                    #maybe The gram is wiki category
                     try:
-                        disambiguation_page_link = ("https://he.wikipedia.org/wiki/" + gram).encode('utf-8')
-                        disambiguation_page = b.get_page(disambiguation_page_link)
-                        categories[gram] = len(disambiguation_page)
-                    except:
-                        categories[gram] = 0
+                        category_link = ("https://he.wikipedia.org/wiki/" + u"קטגוריה"  + u":" + gram).encode('utf-8')
+                        category_page = b.get_page(category_link)
+                        # if category_page.contains(u"אין בוויקיפדיה קטגוריה בשם זה"):
+                        #     continue
+                        categories[gram] = len(category_page)
+                    except Exception as e:
+                        print(e)
+                        continue
+        if len(article_lens) != 0:
+                max_len = max(article_lens.iterkeys(), key=(lambda key: article_lens[key]))
+                max_article = [key for key, value in article_lens.iteritems() if value == article_lens[max_len]]
+                return random.choice(max_article)
         if len(categories) != 0:
             max_len = max(categories.iterkeys(), key=(lambda key: categories[key]))
             max_categories = [key for key, value in categories.iteritems() if value == categories[max_len]]
             return random.choice(max_categories)
-        else:
-            max_len = max(lens)
-            idx = [i for i, x in enumerate(lens) if x == max_len]
-            topic = msg_ngrams[random.choice(idx)]
-            return topic
+        return "זה"
+
 
         # a = answer_template_wiki(True,["אני לא רוצה לדבר על *", "אני מעדיף שלא לדבר על *", "* זה ממש משעמם בוא נדבר על משהו אחר", "* זה לחנונים, אין לך משהו יותר טוב לדבר עליו?", "עזוב אותי מ*, מה חדש?", " לא כל כך מעניין אותי לדבר על *"])
         # a.get_topic_wiki('אורן חזן')
