@@ -1,5 +1,13 @@
 <Patterns>
 	<Pattern>
+		<Message>ביי</Message>
+		<Message>ביי ביי</Message>
+		<Message>להתראות</Message>
+		<Response>היה ממש כיף לשוחח, ביי ביי</Response>
+		<Response>ביי ביי</Response>
+		<Response>מקווה שנדבר שוב בקרוב, להתראות</Response>
+	</Pattern>
+	<Pattern>
 		<Message>היי</Message>
 		<Message>אהלן</Message>
 		<Response>היי</Response>
